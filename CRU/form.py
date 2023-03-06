@@ -7,6 +7,7 @@ class GeeksForm(forms.ModelForm):
         model = General_provisions
 
         fields = [
+            "title",
             "intro",
             "fount",
             "addition",

@@ -24,3 +24,9 @@ def smth(request):
 
     context['form'] = form
     return render(request, "smth.html", context)
+
+
+def detail_view(request, id):
+    context = {"data": General_provisions.objects.get(id=id)}
+
+    return render(request, "detail_view.html", context)
