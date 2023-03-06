@@ -13,6 +13,7 @@ class General_provisions(models.Model):
 
 
 class Smth(models.Model):
+    title = models.ForeignKey(General_provisions, blank=True, null=True)
     add_items = models.TextField()
     concl = models.TextField()
     causes = models.OneToOneField(concl)
